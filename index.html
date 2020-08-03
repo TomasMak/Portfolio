@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<style data-above-the-fold="true">
+
+	</style>
+
+
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+	<title>Tomas M</title>
+
+	<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+
+	<!-- CSS -->
+	<script>
+		var cb = function () {
+			var l = document.createElement('link'); l.rel = 'stylesheet';
+			l.href = 'css/all.css';
+			var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+		};
+		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+			webkitRequestAnimationFrame || msRequestAnimationFrame;
+		if (raf) raf(cb);
+		else window.addEventListener('load', cb);
+	</script>
+
+	<!-- no JS? Put fallback CSS links here. -->
+	<noscript>
+		<link href="css/all.css" rel="stylesheet">
+
+	</noscript>
+	<!-- /CSS -->
+
+</head>
+
+<body>
+
+	<div id="large-header" class="large-header bg-blue m0" style="height: 377px;">
+		<canvas id="animated-background" class="absolute"></canvas>
+		
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript">
+		// Add a script element as a child of the body
+		function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "js/main/all.js";
+			document.body.appendChild(element);
+		}
+		// Check for browser support of event handling capability	
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
+</body>
+
+</html>

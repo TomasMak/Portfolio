@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+  }
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 100;
+	background-color: #f2f2f2;
+	color: #484848;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+.container {
+	z-index: 700;
+	flex: 1 0 auto;
+	max-width: 100% !important
+	
+}
+.bg-blue{background-color: rgba(0, 0, 0, 0.892)}
+.bg-blue{-webkit-animation:color-pulse 10s infinite;-moz-animation:color-pulse 1s infinite;-o-animation:color-pulse 1s infinite;animation:color-pulse 10s infinite;background-image:url(../../images/noise.png)}
