@@ -35,7 +35,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
         height = window.innerHeight;
         target = {x: width/2, y: height/2};
 
-        largeHeader = document.getElementById('large-header');
+        largeHeader = document.getElementById('main');
         largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('animated-background');
