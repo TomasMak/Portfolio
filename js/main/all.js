@@ -176,7 +176,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(255,255,255,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(255,255,255,'+ p.active * 1.2 +')';
             ctx.stroke();
         }
     }
@@ -207,17 +207,6 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
     
 })();
 
-
-function showWorks() {
-    var x = document.getElementById("allWorks");
-    
-    if (x.style.visibility === "hidden") {
-      x.style.visibility = "visible";
-    } else {
-      x.style.visibility = "hidden";
-    }
-    console.log(x)
-  }
 
 
 
