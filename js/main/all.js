@@ -176,7 +176,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgb(255, 0, 0,'+ p.active * 1.4 +')';
+            ctx.strokeStyle = 'rgb(255, 0, 0,'+ p.active * 1.5 +')';
             ctx.stroke();
         }
     }

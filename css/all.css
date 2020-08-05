@@ -77,9 +77,6 @@ canvas, .overlay-container {
 .overlay-container {
   padding: 20px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .projects {
   margin-top: 40px;
@@ -97,5 +94,17 @@ canvas, .overlay-container {
 .projects a:hover, .about a:hover {
   opacity: 1;
   color: rgb(0, 0, 255);
+  
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .overlay-container {
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   
 }
