@@ -77,7 +77,6 @@ canvas, .overlay-container {
 .overlay-container {
   padding: 20px;
   position: fixed;
-  width: 100%;
 }
 .projects {
   margin-top: 40px;
